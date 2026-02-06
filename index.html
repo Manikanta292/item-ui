@@ -60,7 +60,9 @@
         resultDiv.innerHTML = `
           <b>ID:</b> ${data.id} <br>
           <b>Name:</b> ${data.name} <br>
-          <b>Price:</b> ${data.price}
+          <b>Price:</b> ${data.price} <br>
+		  <b>Description:</b> ${data.description} <br>
+		  <b>Stock Available:</b> ${data.stockQuantity}
         `;
       } catch (error) {
         resultDiv.innerHTML = "Error: " + error.message;
