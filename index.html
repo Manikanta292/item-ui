@@ -42,7 +42,7 @@ async function getItem() {
     const data = await res.json();
 
     document.getElementById("getResult").innerText =
-      `Name: ${data.name} | Price: ${data.price} | Stock: ${data.stockQuantity}`;
+      `Id: ${data.id} | Name: ${data.name} | Description: ${data.description} | Price: ${data.price} | Category: ${data.category} |Stock: ${data.stockQuantity}`;
   } catch {
     document.getElementById("getResult").innerText = "Item not found";
   }
